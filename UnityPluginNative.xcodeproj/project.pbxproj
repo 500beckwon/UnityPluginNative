@@ -16,6 +16,13 @@
 		68A01DE72861E08700EB7852 /* UnityPluginNativeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A01DE62861E08700EB7852 /* UnityPluginNativeTests.swift */; };
 		68A01DF12861E08700EB7852 /* UnityPluginNativeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A01DF02861E08700EB7852 /* UnityPluginNativeUITests.swift */; };
 		68A01DF32861E08700EB7852 /* UnityPluginNativeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A01DF22861E08700EB7852 /* UnityPluginNativeUITestsLaunchTests.swift */; };
+		68B7C6D8286F040F0048C3F1 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B7C6D7286F040F0048C3F1 /* UnityFramework.framework */; };
+		68B7C6D9286F040F0048C3F1 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68B7C6D7286F040F0048C3F1 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		68E2F31C287D7BB0002CA4C2 /* UnityEmbeddedSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E2F31B287D7BB0002CA4C2 /* UnityEmbeddedSwift.swift */; };
+		68E2F31E287D7BE8002CA4C2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E2F31D287D7BE8002CA4C2 /* TabBarController.swift */; };
+		68E2F320287D7EF7002CA4C2 /* UnityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E2F31F287D7EF7002CA4C2 /* UnityViewController.swift */; };
+		68E2F337287D844C002CA4C2 /* UnityiOSPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68E2F335287D8444002CA4C2 /* UnityiOSPlugin.framework */; };
+		68E2F338287D844C002CA4C2 /* UnityiOSPlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68E2F335287D8444002CA4C2 /* UnityiOSPlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +42,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		68A01E162861E21000EB7852 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				68B7C6D9286F040F0048C3F1 /* UnityFramework.framework in Embed Frameworks */,
+				68E2F338287D844C002CA4C2 /* UnityiOSPlugin.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		68A01DCC2861E08700EB7852 /* UnityPluginNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnityPluginNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A01DCF2861E08700EB7852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68A01DD12861E08700EB7852 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		68A01DD32861E08700EB7852 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,11 +65,17 @@
 		68A01DD82861E08700EB7852 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68A01DDB2861E08700EB7852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68A01DDD2861E08700EB7852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		68A01DE22861E08700EB7852 /* UnityPluginNativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnityPluginNativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A01DE62861E08700EB7852 /* UnityPluginNativeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityPluginNativeTests.swift; sourceTree = "<group>"; };
-		68A01DEC2861E08700EB7852 /* UnityPluginNativeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnityPluginNativeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A01DF02861E08700EB7852 /* UnityPluginNativeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityPluginNativeUITests.swift; sourceTree = "<group>"; };
 		68A01DF22861E08700EB7852 /* UnityPluginNativeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityPluginNativeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		68B7C6D3286F03EB0048C3F1 /* UnityPluginNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnityPluginNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68B7C6D4286F03EC0048C3F1 /* UnityPluginNativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnityPluginNativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68B7C6D5286F03EC0048C3F1 /* UnityPluginNativeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnityPluginNativeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68B7C6D7286F040F0048C3F1 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68E2F31B287D7BB0002CA4C2 /* UnityEmbeddedSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityEmbeddedSwift.swift; sourceTree = "<group>"; };
+		68E2F31D287D7BE8002CA4C2 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		68E2F31F287D7EF7002CA4C2 /* UnityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityViewController.swift; sourceTree = "<group>"; };
+		68E2F335287D8444002CA4C2 /* UnityiOSPlugin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityiOSPlugin.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68B7C6D8286F040F0048C3F1 /* UnityFramework.framework in Frameworks */,
+				68E2F337287D844C002CA4C2 /* UnityiOSPlugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,18 +111,11 @@
 				68A01DCE2861E08700EB7852 /* UnityPluginNative */,
 				68A01DE52861E08700EB7852 /* UnityPluginNativeTests */,
 				68A01DEF2861E08700EB7852 /* UnityPluginNativeUITests */,
-				68A01DCD2861E08700EB7852 /* Products */,
+				68A01DFF2861E0EC00EB7852 /* Frameworks */,
+				68B7C6D3286F03EB0048C3F1 /* UnityPluginNative.app */,
+				68B7C6D4286F03EC0048C3F1 /* UnityPluginNativeTests.xctest */,
+				68B7C6D5286F03EC0048C3F1 /* UnityPluginNativeUITests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		68A01DCD2861E08700EB7852 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				68A01DCC2861E08700EB7852 /* UnityPluginNative.app */,
-				68A01DE22861E08700EB7852 /* UnityPluginNativeTests.xctest */,
-				68A01DEC2861E08700EB7852 /* UnityPluginNativeUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		68A01DCE2861E08700EB7852 /* UnityPluginNative */ = {
@@ -102,6 +124,9 @@
 				68A01DCF2861E08700EB7852 /* AppDelegate.swift */,
 				68A01DD12861E08700EB7852 /* SceneDelegate.swift */,
 				68A01DD32861E08700EB7852 /* ViewController.swift */,
+				68E2F31D287D7BE8002CA4C2 /* TabBarController.swift */,
+				68E2F31F287D7EF7002CA4C2 /* UnityViewController.swift */,
+				68E2F31B287D7BB0002CA4C2 /* UnityEmbeddedSwift.swift */,
 				68A01DD52861E08700EB7852 /* Main.storyboard */,
 				68A01DD82861E08700EB7852 /* Assets.xcassets */,
 				68A01DDA2861E08700EB7852 /* LaunchScreen.storyboard */,
@@ -127,6 +152,15 @@
 			path = UnityPluginNativeUITests;
 			sourceTree = "<group>";
 		};
+		68A01DFF2861E0EC00EB7852 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68B7C6D7286F040F0048C3F1 /* UnityFramework.framework */,
+				68E2F335287D8444002CA4C2 /* UnityiOSPlugin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +171,7 @@
 				68A01DC82861E08700EB7852 /* Sources */,
 				68A01DC92861E08700EB7852 /* Frameworks */,
 				68A01DCA2861E08700EB7852 /* Resources */,
+				68A01E162861E21000EB7852 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,7 +179,7 @@
 			);
 			name = UnityPluginNative;
 			productName = UnityPluginNative;
-			productReference = 68A01DCC2861E08700EB7852 /* UnityPluginNative.app */;
+			productReference = 68B7C6D3286F03EB0048C3F1 /* UnityPluginNative.app */;
 			productType = "com.apple.product-type.application";
 		};
 		68A01DE12861E08700EB7852 /* UnityPluginNativeTests */ = {
@@ -162,7 +197,7 @@
 			);
 			name = UnityPluginNativeTests;
 			productName = UnityPluginNativeTests;
-			productReference = 68A01DE22861E08700EB7852 /* UnityPluginNativeTests.xctest */;
+			productReference = 68B7C6D4286F03EC0048C3F1 /* UnityPluginNativeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		68A01DEB2861E08700EB7852 /* UnityPluginNativeUITests */ = {
@@ -180,7 +215,7 @@
 			);
 			name = UnityPluginNativeUITests;
 			productName = UnityPluginNativeUITests;
-			productReference = 68A01DEC2861E08700EB7852 /* UnityPluginNativeUITests.xctest */;
+			productReference = 68B7C6D5286F03EC0048C3F1 /* UnityPluginNativeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -215,7 +250,7 @@
 				Base,
 			);
 			mainGroup = 68A01DC32861E08700EB7852;
-			productRefGroup = 68A01DCD2861E08700EB7852 /* Products */;
+			productRefGroup = 68A01DC32861E08700EB7852;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -261,6 +296,9 @@
 				68A01DD42861E08700EB7852 /* ViewController.swift in Sources */,
 				68A01DD02861E08700EB7852 /* AppDelegate.swift in Sources */,
 				68A01DD22861E08700EB7852 /* SceneDelegate.swift in Sources */,
+				68E2F31E287D7BE8002CA4C2 /* TabBarController.swift in Sources */,
+				68E2F320287D7EF7002CA4C2 /* UnityViewController.swift in Sources */,
+				68E2F31C287D7BB0002CA4C2 /* UnityEmbeddedSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +404,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +458,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -438,11 +476,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X2WF6FR3RY;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UnityPluginNative/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -454,7 +498,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -466,11 +511,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X2WF6FR3RY;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UnityPluginNative/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -482,7 +533,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
