@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../TestPlugin/TestPlugin05/Unity-iPhone.xcodeproj">
+      location = "group:../TestPlugin/TestPlugin01/Unity-iPhone.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:UnityPluginNative.xcodeproj">

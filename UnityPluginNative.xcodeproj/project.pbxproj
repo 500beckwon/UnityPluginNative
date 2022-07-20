@@ -57,6 +57,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		680DF59B288804300061B6E5 /* UnityPluginNativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = UnityPluginNativeTests.xctest; path = "/Users/500beckwon/SwiftWork/UnityPluginNative/build/Debug-iphoneos/UnityPluginNativeTests.xctest"; sourceTree = "<absolute>"; };
+		680DF59C288804300061B6E5 /* UnityPluginNativeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = UnityPluginNativeUITests.xctest; path = "/Users/500beckwon/SwiftWork/UnityPluginNative/build/Debug-iphoneos/UnityPluginNativeUITests.xctest"; sourceTree = "<absolute>"; };
 		68A01DCF2861E08700EB7852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68A01DD12861E08700EB7852 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		68A01DD32861E08700EB7852 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,8 +69,6 @@
 		68A01DF02861E08700EB7852 /* UnityPluginNativeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityPluginNativeUITests.swift; sourceTree = "<group>"; };
 		68A01DF22861E08700EB7852 /* UnityPluginNativeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityPluginNativeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		68B7C6D3286F03EB0048C3F1 /* UnityPluginNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnityPluginNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		68B7C6D4286F03EC0048C3F1 /* UnityPluginNativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnityPluginNativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		68B7C6D5286F03EC0048C3F1 /* UnityPluginNativeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnityPluginNativeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B7C6D7286F040F0048C3F1 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68E2F31B287D7BB0002CA4C2 /* UnityEmbeddedSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityEmbeddedSwift.swift; sourceTree = "<group>"; };
 		68E2F31D287D7BE8002CA4C2 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -111,8 +111,6 @@
 				68A01DEF2861E08700EB7852 /* UnityPluginNativeUITests */,
 				68A01DFF2861E0EC00EB7852 /* Frameworks */,
 				68B7C6D3286F03EB0048C3F1 /* UnityPluginNative.app */,
-				68B7C6D4286F03EC0048C3F1 /* UnityPluginNativeTests.xctest */,
-				68B7C6D5286F03EC0048C3F1 /* UnityPluginNativeUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,8 +119,8 @@
 			children = (
 				68A01DCF2861E08700EB7852 /* AppDelegate.swift */,
 				68A01DD12861E08700EB7852 /* SceneDelegate.swift */,
-				68A01DD32861E08700EB7852 /* ViewController.swift */,
 				68E2F31D287D7BE8002CA4C2 /* TabBarController.swift */,
+				68A01DD32861E08700EB7852 /* ViewController.swift */,
 				68E2F31F287D7EF7002CA4C2 /* UnityViewController.swift */,
 				68E2F31B287D7BB0002CA4C2 /* UnityEmbeddedSwift.swift */,
 				68A01DD82861E08700EB7852 /* Assets.xcassets */,
@@ -194,7 +192,7 @@
 			);
 			name = UnityPluginNativeTests;
 			productName = UnityPluginNativeTests;
-			productReference = 68B7C6D4286F03EC0048C3F1 /* UnityPluginNativeTests.xctest */;
+			productReference = 680DF59B288804300061B6E5 /* UnityPluginNativeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		68A01DEB2861E08700EB7852 /* UnityPluginNativeUITests */ = {
@@ -212,7 +210,7 @@
 			);
 			name = UnityPluginNativeUITests;
 			productName = UnityPluginNativeUITests;
-			productReference = 68B7C6D5286F03EC0048C3F1 /* UnityPluginNativeUITests.xctest */;
+			productReference = 680DF59C288804300061B6E5 /* UnityPluginNativeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
