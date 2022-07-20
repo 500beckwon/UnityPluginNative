@@ -44,14 +44,9 @@ class UnityEmbeddedSwift: UIResponder, UnityFrameworkListener {
     }
 
     static func showUnity() {
-      //  print(UnityEmbeddedSwift.instance , UnityEmbeddedSwift.instance.unityIsInitialized(), "showUnity0")
         if UnityEmbeddedSwift.instance == nil || UnityEmbeddedSwift.instance.unityIsInitialized() == false {
-            print("showUnity1")
            UnityEmbeddedSwift().initUnityWindow()
-          
-        
         } else {
-            print("showUnity2")
             UnityEmbeddedSwift.instance.showUnityWindow()
         }
     }
@@ -105,9 +100,9 @@ class UnityEmbeddedSwift: UIResponder, UnityFrameworkListener {
         ufw = UnityFrameworkLoad()!
         ufw.setDataBundleId("com.unity3d.framework")
         ufw.register(self)
-//        NSClassFromString("FrameworkLibAPI")?.registerAPIforNativeCalls(self)
-
-        ufw.runEmbedded(withArgc: CommandLine.argc, argv: CommandLine.unsafeArgv, appLaunchOpts: UnityEmbeddedSwift.launchOpts)
+        ufw.runEmbedded(withArgc: CommandLine.argc,
+                        argv: CommandLine.unsafeArgv,
+                        appLaunchOpts: UnityEmbeddedSwift.launchOpts)
 
         sendUnityMessageToGameObject()
 
