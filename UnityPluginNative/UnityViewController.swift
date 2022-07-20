@@ -21,7 +21,7 @@ final class UnityViewController: NSObject {
     init(navigationController: UINavigationController) {
         self.unityNavigationController = navigationController
         super.init()
-         setupLayout()
+        setupLayout()
     }
     
     func setupLayout() {
@@ -40,12 +40,9 @@ final class UnityViewController: NSObject {
     
     @objc func tappedNativeButton(_ sender: UIButton) {
         print("tappedNativeButton!")
-        
         if let sendMessageManager = TestManager.sharedInstance().messageHandler {
             guard let text = NSString(string: "Native Send Text").utf8String else { return }
             sendMessageManager(text)
-        } else {
-            
         }
     }
 }
